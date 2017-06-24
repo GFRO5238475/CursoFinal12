@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#21334d">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+    <TextView
+        style="@style/estiloTexto"
+        android:text="Bienvenido"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/bienvenida"/>
+    <TextView
+        style="@style/estiloTexto"
+        android:text="Usuario"
+        android:id="@+id/usuarioNombre"
+        android:layout_below="@+id/bienvenida"
+        android:layout_marginTop="41dp" />
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usuarioFoto"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+    </com.facebook.login.widget.ProfilePictureView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCerrarSesion"
+        android:text="Cerrar Sesion"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/usuarioFoto"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
